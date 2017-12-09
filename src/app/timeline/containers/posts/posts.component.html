@@ -1,0 +1,3 @@
+<div *ngFor="let item of (posts$ | async)">
+  <p [routerLink]="['/timeline', item.id]">{{item.title}}</p>
+</div>
