@@ -1,7 +1,7 @@
 import { PostsComponent } from "./posts/posts.component";
-import { PostItemComponent } from "./postItem/postItem.component";
+import { PostDetailComponent } from "./post-detail/post-detail.component";
 
-export const containers: any[] = [PostsComponent, PostItemComponent];
+export const containers: any[] = [PostsComponent, PostDetailComponent];
 
 export * from "./posts/posts.component";
-export * from "./postItem/postItem.component";
+export * from "./post-detail/post-detail.component";

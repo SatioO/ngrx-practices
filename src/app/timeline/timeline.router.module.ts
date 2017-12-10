@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule, Routes } from "@angular/router";
-import { PostsComponent, PostItemComponent } from "./containers";
+import { PostsComponent, PostDetailComponent } from "./containers";
 
 // guards
 import * as fromGuards from "./guards";
@@ -16,7 +16,7 @@ const ROUTES: Routes = [
   {
     path: ":postId",
     canActivate: [fromGuards.HasPostGuard],
-    component: PostItemComponent
+    component: PostDetailComponent
   }
 ];
 

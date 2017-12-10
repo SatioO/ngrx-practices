@@ -1,5 +1,1 @@
-<div class="card">
-  <ul class="list-group list-group-flush" *ngFor="let item of (posts$ | async)">
-    <li [routerLink]="['/timeline', item.id]" class="list-group-item">{{item.title}}</li>
-  </ul>
-</div>
+<post-item [post]="post" *ngFor="let post of (posts$ | async)"></post-item>

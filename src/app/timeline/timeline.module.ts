@@ -10,6 +10,9 @@ import { reducers, effects } from "./store";
 // containers
 import * as fromContainers from "./containers";
 
+// components
+import * as fromComponents from "./components";
+
 // services
 import * as fromServices from "./services";
 
@@ -20,7 +23,7 @@ import * as fromGuards from "./guards";
 import { TimelineRoutingModule } from "./timeline.router.module";
 
 @NgModule({
-  declarations: [...fromContainers.containers],
+  declarations: [...fromContainers.containers, ...fromComponents.components],
   imports: [
     CommonModule,
     TimelineRoutingModule,

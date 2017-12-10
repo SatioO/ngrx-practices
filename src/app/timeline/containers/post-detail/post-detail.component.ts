@@ -5,10 +5,10 @@ import { Posts } from "../../models";
 import { TimelineState, getSelectedPost } from "../../store";
 
 @Component({
-  selector: "post-item",
-  templateUrl: "./postItem.component.html"
+  selector: "post-detail",
+  templateUrl: "./post-detail.component.html"
 })
-export class PostItemComponent implements OnInit {
+export class PostDetailComponent implements OnInit {
   post$: Observable<Posts>;
   constructor(private store: Store<TimelineState>) {}
 
