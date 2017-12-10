@@ -1,5 +1,5 @@
-import { PostListComponent } from "./postlist/post-item.component";
+import { PostItemComponent } from "./post-item/post-item.component";
 
-export const components: any[] = [PostListComponent];
+export const components: any[] = [PostItemComponent];
 
-export * from "./postlist/post-item.component";
+export * from "./post-item/post-item.component";

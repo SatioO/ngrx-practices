@@ -6,6 +6,6 @@ import { Posts } from "../../models";
   templateUrl: "./post-item.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PostListComponent {
+export class PostItemComponent {
   @Input() post: Posts;
 }
