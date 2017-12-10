@@ -21,7 +21,7 @@ import { TimelineRoutingModule } from "./timeline.router.module";
 
 @NgModule({
   declarations: [...fromContainers.containers],
-  imports: [...fromGuards.guards
+  imports: [
     CommonModule,
     TimelineRoutingModule,
     HttpClientModule,
