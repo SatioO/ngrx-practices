@@ -3,10 +3,10 @@ import { CommonModule } from "@angular/common";
 import { RouterModule, Routes } from "@angular/router";
 
 const ROUTES: Routes = [
-  { path: "", pathMatch: "full", redirectTo: "timeline" },
+  { path: "", pathMatch: "full", redirectTo: "articles" },
   {
-    path: "timeline",
-    loadChildren: "../timeline/timeline.module#TimelineModule"
+    path: "articles",
+    loadChildren: "../articles/article.module#ArticleModule"
   }
 ];
 

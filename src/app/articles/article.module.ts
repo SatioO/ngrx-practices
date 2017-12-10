@@ -20,18 +20,18 @@ import * as fromServices from "./services";
 import * as fromGuards from "./guards";
 
 // modules
-import { TimelineRoutingModule } from "./timeline.router.module";
+import { ArticleRoutingModule } from "./article.router.module";
 
 @NgModule({
   declarations: [...fromContainers.containers, ...fromComponents.components],
   imports: [
     CommonModule,
-    TimelineRoutingModule,
+    ArticleRoutingModule,
     HttpClientModule,
-    StoreModule.forFeature("timeline", reducers),
+    StoreModule.forFeature("articles", reducers),
     EffectsModule.forFeature(effects)
   ],
   exports: [...fromContainers.containers],
   providers: [...fromServices.services, ...fromGuards.guards]
 })
-export class TimelineModule {}
+export class ArticleModule {}

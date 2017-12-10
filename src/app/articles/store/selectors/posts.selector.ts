@@ -5,8 +5,8 @@ import { getRouterState } from "../../../main/store";
 import { Posts } from "../../models";
 
 export const getPostsState = createSelector(
-  fromReducers.getTimelineState,
-  (state: fromReducers.TimelineState) => state.posts
+  fromReducers.getArticleState,
+  (state: fromReducers.ArticleState) => state.posts
 );
 
 export const getPostsEntities = createSelector(

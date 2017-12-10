@@ -6,14 +6,12 @@ import {
 
 import * as fromReducers from "./posts.reducer";
 
-export interface TimelineState {
+export interface ArticleState {
   posts: fromReducers.PostsState;
 }
 
-export const reducers: ActionReducerMap<TimelineState> = {
+export const reducers: ActionReducerMap<ArticleState> = {
   posts: fromReducers.reducer
 };
 
-export const getTimelineState = createFeatureSelector<TimelineState>(
-  "timeline"
-);
+export const getArticleState = createFeatureSelector<ArticleState>("articles");

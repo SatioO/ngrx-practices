@@ -24,4 +24,4 @@ const ROUTES: Routes = [
   imports: [CommonModule, RouterModule.forChild(ROUTES)],
   exports: [RouterModule]
 })
-export class TimelineRoutingModule {}
+export class ArticleRoutingModule {}

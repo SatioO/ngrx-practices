@@ -10,7 +10,7 @@ import * as fromStore from "../store";
 
 @Injectable()
 export class PostsGuard implements CanActivate {
-  constructor(private store: Store<fromStore.TimelineState>) {}
+  constructor(private store: Store<fromStore.ArticleState>) {}
 
   canActivate(): Observable<boolean> {
     return this.checkStore().pipe(

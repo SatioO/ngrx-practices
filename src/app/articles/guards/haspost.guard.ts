@@ -11,7 +11,7 @@ import * as fromStore from "../store";
 
 @Injectable()
 export class HasPostGuard implements CanActivate {
-  constructor(private store: Store<fromStore.TimelineState>) {}
+  constructor(private store: Store<fromStore.ArticleState>) {}
 
   canActivate(route: ActivatedRouteSnapshot): Observable<boolean> {
     return this.checkStore().pipe(

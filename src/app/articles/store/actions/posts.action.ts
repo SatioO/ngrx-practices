@@ -1,9 +1,9 @@
 import { Action } from "@ngrx/store";
 import { Posts } from "../../models";
 
-export const GET_POSTS = "[Timeline] GET POSTS";
-export const GET_POSTS_SUCCESS = "[Timeline] GET POSTS SUCCESS";
-export const GET_POSTS_FAIL = "[Timeline] GET POSTS FAIL";
+export const GET_POSTS = "[Article] GET POSTS";
+export const GET_POSTS_SUCCESS = "[Article] GET POSTS SUCCESS";
+export const GET_POSTS_FAIL = "[Article] GET POSTS FAIL";
 
 export class GetPosts implements Action {
   readonly type = GET_POSTS;
