@@ -9,13 +9,13 @@ import * as fromGuards from "./guards";
 const ROUTES: Routes = [
   {
     path: "",
-    component: PostsComponent,
-    canActivate: [fromGuards.PostsGuard]
+    canActivate: [fromGuards.PostsGuard],
+    component: PostsComponent
   },
 
   {
     path: ":postId",
-    canActivate: [fromGuards.PostsGuard],
+    canActivate: [fromGuards.HasPostGuard],
     component: PostItemComponent
   }
 ];

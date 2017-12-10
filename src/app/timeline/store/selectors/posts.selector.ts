@@ -18,7 +18,6 @@ export const getSelectedPost = createSelector(
   getPostsEntities,
   getRouterState,
   (entities, router): Posts => {
-    console.log(router.state);
     return router.state && entities[router.state.params.postId];
   }
 );

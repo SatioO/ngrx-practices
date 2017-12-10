@@ -1,3 +1,5 @@
-<div *ngFor="let item of (posts$ | async)">
-  <p [routerLink]="['/timeline', item.id]">{{item.title}}</p>
+<div class="card">
+  <ul class="list-group list-group-flush" *ngFor="let item of (posts$ | async)">
+    <li [routerLink]="['/timeline', item.id]" class="list-group-item">{{item.title}}</li>
+  </ul>
 </div>

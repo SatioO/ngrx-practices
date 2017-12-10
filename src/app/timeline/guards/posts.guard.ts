@@ -1,12 +1,12 @@
-import { Injectable } from '@angular/core';
-import { CanActivate } from '@angular/router';
+import { Injectable } from "@angular/core";
+import { CanActivate } from "@angular/router";
 
-import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
-import { tap, filter, take, switchMap, catchError } from 'rxjs/operators';
+import { Store } from "@ngrx/store";
+import { Observable } from "rxjs/Observable";
+import { of } from "rxjs/observable/of";
+import { tap, take, filter, switchMap, catchError } from "rxjs/operators";
 
-import * as fromStore from '../store';
+import * as fromStore from "../store";
 
 @Injectable()
 export class PostsGuard implements CanActivate {
